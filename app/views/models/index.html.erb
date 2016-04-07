@@ -1,9 +1,10 @@
-<% make = Make.where(webmotors_id: params[:webmotors_make_id])[0] %>
-<% models = Model.where(make_id: make.id) %>
-
 <a href="/"><< Voltar</a>
 <ul>
-  <% models.each do |model| %>
-    <li><%= model.name %></li>
+  <% if @make %>
+      <% @models.each do |model| %>
+          <li><%= model.name %></li>
+      <% end %>
+  <% else %>
+    <li>Marca não encontra</li>
   <% end %>
 </ul>
