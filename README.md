@@ -13,3 +13,19 @@ O objetivo da aplicação é consultar marcas e modelos de carros usando a API d
 5. Utilize seu conhecimento em Ruby/Rails e Orientação a Objetos para fazer todas as possíveis mudanças que julgar pertinente: classes, métodos, variáveis e boas práticas.
 
 Obs: todo o cuidado e rigor adicional serão contados como pontos positivos.
+
+# Passos para teste
+
+```sh
+$ git clone https://github.com/cadorfo/ruby-applicants-test
+
+$ cd ruby-applicants-test
+
+$ bundle install
+
+$ rake db:migrate
+
+$ rspec 
+
+$ rails s
+```
